@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Soma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Soma</h1>
+        <p>Digite dois números inteiros para calcular a soma</p>
+        
+        <div class="input-group">
+            <label for="num1">Primeiro número:</label>
+            <input type="number" id="num1" placeholder="Digite um número inteiro">
+            <div class="error" id="error1">Por favor, insira um número válido</div>
+        </div>
+        
+        <div class="input-group">
+            <label for="num2">Segundo número:</label>
+            <input type="number" id="num2" placeholder="Digite um número inteiro">
+            <div class="error" id="error2">Por favor, insira um número válido</div>
+        </div>
+        
+        <div class="button-group">
+            <button id="calculateBtn" onclick="calcularSoma()">Calcular Soma</button>
+            <button id="clearBtn" onclick="limparCampos()">Limpar</button>
+        </div>
+        
+        <div class="result" id="result">
+            <h2>Resultado:</h2>
+            <p id="resultText"></p>
+        </div>
+        
+        <div class="history">
+            <h3>Histórico de Cálculos:</h3>
+            <ul id="historyList"></ul>
+        </div>
+        
+        <div class="footer">
+            Programa de Soma - Desenvolvido com HTML, CSS e JavaScript
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
